@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<main class="content">
+<section class="sidebar">
+    <div class="boxLogo">
+    <h1 class="logo">Order Menu</h1>
+    </div>
+    <div class="sidebarMenus">
+        <button class="selectionBtn" data-category="new"><i class='bx bx-newspaper'></i>What's New?</button>
+        <button class="selectionBtn" data-category="sandwich"><i class='bx bx-burger-alt'></i>Sandwiches</button>
+        <button class="selectionBtn" data-category="ricemeals"><i class='bx bx-fork-spoon'></i>Rice Meals</button>
+        <button class="selectionBtn" data-category="desserts"><i class='bx bx-icecream'></i>Desserts</button>
+        <button class="selectionBtn" data-category="drinks"><i class='bx bx-coffee-cup'></i>Drinks</button>
+        <button class="selectionBtn" data-category="breakfasts"><i class='bx bx-egg-fried'></i>Breakfasts</button>
+    </div>
+</section>
+
+<section class="mainContent">
+<!-- Top Bar -->
+ <div class="topBar">
+    <button class="sidebarToggleBtn"><i class='bx  bx-menu'></i> </button>
+    <div class="rightSideBtn">
+        <button class="cartBtn"><i class='bx  bx-cart'></i></button>
+        <button class="userToggleBtn" id="userToggleIcon"><i class='bx bxs-user'></i></button>
+    </div>
+ </div>
+    <div class="menuSearch">
+            <div class="searchbar"><input type="text" placeholder="Search food"><button class="searchBtn">Search</button></div>
+    </div>
+    <div class="itemCart">
+    <div class="menuContainer">
+<!--Rice Meals-->
+        <div class="menuItem" data-category="ricemeals">
+            <div class= "foodItem" data-name="ChickenRicemealsFillet"><img src="Pictures/Menu/Chicken/Menu_Chicken_500x500_1pcChickenFillet_Plus_Rice-250.jpg" alt=""></div><div><h3>1-pc Chicken Fillet Solo</h3></div><div><p>PHP69.00</p></div><div><button class="addorder" data-price = "69.00" data-name="1-pc Chicken Fillet Solo">Add Order</button></div></div>
+        <div class="menuItem" data-category="ricemeals">
+            <div class= "foodItem" data-name="ChickenRicemeals"><img src="Pictures/Menu/Chicken/Menu_Chicken_500x500_1pcChickenMcDo_Plus_Rice-500.jpg" alt=""></div><div><h3>1-pc Chicken Wcdo Solo</h3></div><div><p>PHP89.00</p></div><div><button class="addorder" data-price = "89.00" data-name="1-pc Chicken Wcdo Solo">Add Order</button></div></div>
+        <div class="menuItem" data-category="ricemeals">
+            <div class= "foodItem" data-name="ChickenRicemealsSpaghetti"><img src="Pictures/Menu/Chicken/Menu_Chicken_500x500_1pcChickenMcDo_Plus_Spaghetti-500.jpg" alt=""></div><div><h3>1-pc Chicken Spaghetti</h3></div><div><p>PHP129.00</p></div><div><button class="addorder" data-price = "129.00" data-name="1-pc Chicken Spaghetti">Add Order</button></div></div>
+        <div class="menuItem" data-category="ricemeals">
+            <div class= "foodItem" data-name="ChickenRicemeals"><img src="Pictures/Menu/Chicken/Menu_Chicken_500x500_2pcChickenMcDo_Plus_Rice-500.jpg" alt=""></div><div><h3>2-pc Chicken Wcdo Solo</h3></div><div><p>PHP149.00</p></div><div><button class="addorder" data-price = "149.00" data-name="2-pc Chicken Wcdo Solo">Add Order</button></div></div>
+        <div class="menuItem" data-category="ricemeals">
+            <div class= "foodItem" data-name="ChickenRicemealsNuggets"><img src="Pictures/Menu/Chicken/Menu_Chicken_500x500_6pcChickenNuggets_Plus_Fries-250.jpg" alt=""></div><div><h3>6-pc Chicken Nuggets with Fries</h3></div><div><p>PHP109.00</p></div><div><button class="addorder" data-price = "109.00" data-name="6-pc Chicken Nuggets with Fries">Add Order</button></div></div>
+<!--Sandwich-->
+        <div class="menuItem" data-category="sandwich">
+            <div class= "foodItem" data-name="burgersBigWac"><img src="Pictures/Menu/Burger/Menu_Burgers_500x500_BigMac-500.jpg" alt=""></div><div><h3>BigWac</h3></div><div><p>PHP179.00</p></div><div><button class="addorder" data-price = "179.00" data-name="BigWac">Add Order</button></div></div>
+        <div class="menuItem" data-category="sandwich">
+            <div class="foodItem" data-name="burgers"><img src="Pictures/Menu/Burger/Menu_Burgers_500x500_BurgerMcDo-500.jpg" alt=""></div><div><h3>Burger Wcdo Solo</h3></div><div><p>PHP49.00</p></div><div><button class="addorder" data-price = "49.00" data-name="Burger Wcdo Solo">Add Order</button></div></div>
+        <div class="menuItem" data-category="sandwich">
+            <div class= "foodItem" data-name="burgersCheeseburger"><img src="Pictures/Menu/Burger/Menu_Burgers_500x500_Cheeseburger-500.jpg" alt=""></div><div><h3>Cheeseburger Solo</h3></div><div><p>PHP89.00</p></div><div><button class="addorder" data-price = "89.00" data-name="Cheeseburger Solo">Add Order</button></div></div>
+        <div class="menuItem" data-category="sandwich">
+            <div class= "foodItem" data-name="CrispyChickenSandwich"><img src="Pictures/Menu/Burger/Menu_Burgers_500x500_CrispyChickenFilletSandwich-500.jpg" alt=""></div><div><h3>Crispy Chicken Sandwich Solo</h3></div><div><p>PHP69.00</p></div><div><button class="addorder" data-price = "69.00" data-name="Crispy Chicken Sandwich Solo">Add Order</button></div></div>
+        <div class="menuItem" data-category="sandwich">
+            <div class= "foodItem" data-name="burgersDoubleCheese"><img src="Pictures/Menu/Burger/Menu_Burgers_500x500_DoubleCheeseburger-500.jpg" alt=""></div><div><h3>Double Cheese Burger Solo</h3></div><div><p>PHP149.00</p></div><div><button class="addorder" data-price = "149.00" data-name="Double Cheese Burger Solo">Add Order</button></div></div>
+        <div class="menuItem" data-category="sandwich">
+            <div class= "foodItem" data-name="burgersQuarterPounderwithCheese"><img src="Pictures/Menu/Burger/Menu_Burgers_500x500_QPC-500.jpg" alt=""></div><div><h3>Quarter Pounder with Cheese Solo</h3></div><div><p>PHP179.00</p></div><div><button class="addorder" data-price = "179.00" data-name="Quarter Pounder with Cheese Solo">Add Order</button></div></div>
+        <div class="menuItem" data-category="sandwich">
+            <div class= "foodItem" data-name="ChickenSandwich"><img src="Pictures/Menu/Burger/Menu_Burgers_500x500_McChickenSandwich-500.jpg" alt=""></div><div><h3>WcChicken Sandwich</h3></div><div><p>PHP129.00</p></div><div><button class="addorder" data-price = "129.00" data-name="WcChicken Sandwich">Add Order</button></div></div>
+<!--Desserts-->
+        <div class="menuItem" data-category="desserts">
+            <div class= "foodItem" data-name="ApplePieDesserts"><img src="Pictures/Menu/Desserts/Menu_Desserts_500x500_ApplePie-500-500.jpg" alt=""></div><div><h3>Apple Pie</h3></div><div><p>PHP49.00</p></div><div><button class="addorder" data-price = "49.00" data-name="Apple Pie">Add Order</button></div></div>
+        <div class="menuItem" data-category="desserts">
+            <div class= "foodItem" data-name="HotFudgeSundae"><img src="Pictures/Menu/Desserts/Menu_Desserts_500x500_SundaeHotFudge-250.jpg" alt=""></div><div><h3>Hot Fudge Sundae</h3></div><div><p>PHP59.00</p></div><div><button class="addorder" data-price = "59.00" data-name="Hot Fudge Sundae">Add Order</button></div></div>
+        <div class="menuItem" data-category="desserts">
+            <div class= "foodItem" data-name="CaramelSundae"><img src="Pictures/Menu/Desserts/Menu_Desserts_500x500_SundaeCaramel-500-250.jpg" alt=""></div><div><h3>Caramel Sundae</h3></div><div><p>PHP59.00</p></div><div><button class="addorder" data-price = "59.00" data-name="Caramel Sundae">Add Order</button></div></div>
+        <div class="menuItem" data-category="desserts">
+            <div class= "foodItem" data-name="VanillaSundaeCone"><img src="Pictures/Menu/Desserts/Menu_Desserts_500x500_VanillaSundaeCone-500-500.jpg" alt=""></div><div><h3>Vanilla Sundae Cone</h3></div><div><p>PHP29.00</p></div><div><button class="addorder" data-price = "29.00" data-name="Vanilla Sundae Cone">Add Order</button></div></div>
+        
+              
+<!-- Drinks -->            
+        <div class="menuItem" data-category="drinks">
+            <div class= "foodItem" data-name="DrinksCoke"><img src="Pictures/Menu/Drinks/COKE-500x500px-500-500.jpg" alt=""></div><div><h3>Regular Coke</h3></div><div><p>PHP49.00</p></div><div><button class="addorder" data-price = "49.00" data-name="Regular Coke">Add Order</button></div></div>
+        <div class="menuItem" data-category="drinks">
+            <div class= "foodItem" data-name="DrinksCokeZero"><img src="Pictures/Menu/Drinks/Menu_Drinks_500x500_CokeZero-500-500.jpg" alt=""></div><div><h3>Coke Zero</h3></div><div><p>PHP49.00</p></div><div><button class="addorder" data-price = "49.00" data-name="Coke Zero">Add Order</button></div></div>
+        <div class="menuItem" data-category="drinks">
+            <div class= "foodItem" data-name="DrinksCokeFloat"><img src="Pictures/Menu/Drinks/Menu_Drinks_500x500_McFloatCoke-500-250.jpg" alt=""></div><div><h3>Medium Coke Float</h3></div><div><p>PHP69.00</p></div><div><button class="addorder" data-price = "69.00" data-name="Medium Coke Float">Add Order</button></div></div>
+        <div class="menuItem" data-category="drinks">
+            <div class= "foodItem" data-name="DrinksMinuteMaidOrangeJuice"><img src="Pictures/Menu/Drinks/Menu_Drinks_500x500_OrangeJuice-500-250.jpg" alt=""></div><div><h3>Orange Juice</h3></div><div><p>PHP59.00</p></div><div><button class="addorder" data-price = "59.00" data-name="Orange Juice">Add Order</button></div></div>
+        <div class="menuItem" data-category="drinks">
+            <div class= "foodItem" data-name="DrinksPremiumRoastHotCoffee"><img src="Pictures/Menu/Drinks/Menu_Drinks-500x500-Premium-Roast-Coffee-2025-500.jpg" alt=""></div><div><h3>PRC Coffee</h3></div><div><p>PHP49.00</p></div><div><button class="addorder" data-price = "49.00" data-name="Premium Roast Coffee">Add Order</button></div></div>
+        
+<!-- Breakfast-->
+        <div class="menuItem" data-category="breakfasts">
+            <div class= "foodItem" data-name="BreakfastTwoPieceHotCakes"><img src="Pictures/Menu/Breakfast/Menu_Breakfast_500x500_2pcHotcakes_2025-500.jpg" alt=""></div><div><h3>2pc Hot Cakes</h3></div><div><p>PHP139.00</p></div><div><button class="addorder" data-price = "139.00" data-name="2pc Hotcakes">Add Order</button></div></div>
+        <div class="menuItem" data-category="breakfasts">
+            <div class= "foodItem" data-name="BreakfastTwoPieceHotCakesWithSauge"><img src="Pictures/Menu/Breakfast/Menu_Breakfast_500x500_2pcHotcakesPlusSausage-500.jpg" alt=""></div><div><h3>2pc Hotcakes with Sausage</h3></div><div><p>PHP159.00</p></div><div><button class="addorder" data-price = "159.00" data-name="2pc Hotcakes with Sausage">Add Order</button></div></div>
+        <div class="menuItem" data-category="breakfasts">
+            <div class= "foodItem" data-name="BreakfastsCheesyEggdesal"><img src="Pictures/Menu/Breakfast/Menu_Breakfast_500x500_CheesyEggdesal-250.jpg" alt=""></div><div><h3>Cheesy Eggdesal</h3></div><div><p>PHP59.00</p></div><div><button class="addorder" data-price = "59.00" data-name="CheesyEggdesal">Add Order</button></div></div>
+        <div class="menuItem" data-category="breakfasts">
+            <div class= "foodItem" data-name="BreakfastsHashbrown"><img src="Pictures/Menu/Breakfast/Menu_Breakfast_500x500_HashBrowns-500.jpg" alt=""></div><div><h3>Hashbrown</h3></div><div><p>PHP39.00</p></div><div><button class="addorder" data-price = "39.00" data-name="Hashbrown">Add Order</button></div></div>
+        <div class="menuItem" data-category="breakfasts">
+            <div class= "foodItem" data-name="BreakfastsMcmuffinWithEgg"><img src="Pictures/Menu/Breakfast/Menu_Breakfast_500x500_McMuffinEgg-500.jpg" alt=""></div><div><h3>WcMuffin with Egg</h3></div><div><p>PHP79.00</p></div><div><button class="addorder" data-price = "79.00" data-name="McWuffin with Egg">Add Order</button></div></div>
+        <div class="menuItem" data-category="breakfasts">
+            <div class= "foodItem" data-name="BreakfastsMcmuffinWithEggAndSausage"><img src="Pictures/Menu/Breakfast/Menu_Breakfast_500x500_McMuffinSausagePlusEgg-500.jpg" alt=""></div><div><h3>WcMuffin with Sausage & Egg</h3></div><div><p>PHP99.00</p></div><div><button class="addorder" data-price = "99.00" data-name="McWuffin with Sausage & Egg">Add Order</button></div></div>
+        <div class="menuItem" data-category="breakfasts">
+            <div class= "foodItem" data-name="BreakfastsSausagePlatter"><img src="Pictures/Menu/Breakfast/Menu_Breakfast_500x500_SausagePlatterPlusRice-500.jpg" alt=""></div><div><h3>Sausage Platter</h3></div><div><p>PHP119.00</p></div><div><button class="addorder" data-price = "119.00" data-name="Sausage Platter">Add Order</button></div></div>
+        <div class="menuItem" data-category="breakfasts">
+            <div class= "foodItem" data-name="Fries"><img src="Pictures/Menu/Breakfast/Menu_Fries_500x500_FriesMedium-500.jpg" alt=""></div><div><h3>Medium Fries</h3></div><div><p>PHP79.00</p></div><div><button class="addorder" data-price = "79.00" data-name="Medium Fries">Add Order</button></div></div>
+<!--Disclaimer-->
+    </div>
+</div>
+<div class="menudisclaimer">
+        <p>This website is created for educational and personal learning purposes only. All brand names, logos, and trademarks such as “McDonald’s,” are the property of their respective owners. This project is not affiliated with, sponsored by, or endorsed by any existing company. The design and content are purely for practice and demonstration in web development.</p>
+    </div>
+</section>
+
+<section class="boxCart">
+    <div class="userBox">
+        <a class="user" id="userIcon"><i class='bx bxs-user'></i></a>
+<!--USER PROFILE POPUP CARD -->
+        <div id="userCard" class="hidden">
+        <img class="profilePic" src="Pictures/Profile/Default_pfp.jpg" alt="Profile">
+
+        <h3 class="userFullName" id="fullName">Guest User</h3>
+
+        <div class="userInfo">
+            <p><strong>Username:</strong> <span id="username">guest</span></p>
+            <p><strong>Email:</strong> <span id="email">guest@example.com</span></p>
+            <p><strong>Gender:</strong> <span id="gender">N/A</span></p>
+            <p><strong>Birthday:</strong> <span id="birthday">N/A</span></p>
+            <p><strong>Phone:</strong> <span id="phone">N/A</span></p>
+            <p><strong>Address:</strong> <span id="address">N/A</span></p>
+        </div>
+
+        <button id="logoutBtn">Logout</button>
+        </div><!--END of user profile -->
+    </div>
+
+<!-- Checkout Box-->
+    <div class="cart">
+        <div class="checkoutBox">
+            <div class="cartItems">
+                <h2>Check Your Order</h2>
+            </div>
+            <div class="orderView">
+                <ul id="viewOrder"></ul>
+                </div>
+        </div>
+        
+        <div class="cartSummary">
+            <p id="totalBox">Total: ₱0.00</p>
+            <button id="checkoutBtn">Place Order</button>
+        </div>
+
+<!-- Place Order Popup -->
+<div id="placeOrderPopup" class="hidden">
+    <div class="popupCard">
+    <h2>Place Your Order</h2>
+    <!-- Order Summary Table -->
+    <div class="orderSummary">
+      <table id="popupOrderTable">
+        <thead>
+          <tr>
+            <th>Qty</th>
+            <th>Product</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Items will be dynamically inserted here -->
+        </tbody>
+      </table>
+      
+    </div>
+    <p class="totalAmount" id="popupTotal">Total: ₱0.00</p>
+
+    <!-- Delivery Address -->
+    <div class="addressSection">
+      <p>Delivery Address:</p>
+      <textarea id="orderAddress"  placeholder="Enter your address"></textarea>
+    </div>
+
+    <!-- Payment Method -->
+    <div class="paymentMethods">
+      <p>Payment Method:</p>
+      <label><input type="radio" name="paymentMethod" value="COD" checked> Cash on Delivery</label>
+      <label><input type="radio" name="paymentMethod" value="Gcash"> Gcash</label>
+      <label><input type="radio" name="paymentMethod" value="PayPal"> PayPal</label>
+      <label><input type="radio" name="paymentMethod" value="CreditCard"> Card Payment</label>
+    </div>
+
+    <!-- Optional Notes -->
+    <div class="orderNotes">
+      <p>Additional Notes:</p>
+      <textarea id="orderNotes" rows="2" placeholder="Special instructions (optional)"></textarea>
+    </div>
+
+    <!-- Buttons -->
+    <div class="popupButtons">
+      <button id="confirmOrderBtn">Confirm Order</button>
+      <button id="cancelOrderBtn">Order more</button>
+    </div>
+
+  </div>
+</div>
+    </div>
+</section>
+</main>
+
+    <script src="menu.js"></script>
+</body>
+</html>

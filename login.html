@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<main class="loginpage">
+    <section class="wrapper">
+        <h1>Login</h1>
+        <form action="">
+            <div class="inputBox">
+            <input class="loginUser" type="text" placeholder="Username or Email" required>
+            <i class='bx  bx-user'  ></i> 
+        </div>
+            <div class="inputBox">
+            <input type="password" class= "loginPassword" placeholder="Password" required >
+            <i class='bx  bx-lock'  id="passwordIcon"></i> 
+        </div>
+        <div class="rememberForgot">
+            <label><input type="checkbox" id="rememberMe">Remember me?</label>
+            <a href="index.html">Forgot Password?</a>
+        </div>
+
+        <button class="loginBtn">Login</a></button>
+        <p id="errorMsg" style="color:red;"></p>
+        <div class="registerLink">
+            <p>Don't have an account? <a href="signup.html">Register</a></p>
+        </div>
+
+        </form>
+        
+    </section>
+    </main>
+    <script src="login.js"></script>
+</body>
+</html>

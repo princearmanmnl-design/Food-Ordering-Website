@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<main class="signuppage">
+<section class="signup-wrapper">
+    <h1>Create Your Account</h1>
+    <div class="signup-container">
+
+        <!-- STEP 1: Personal Info -->
+        <section class="signup-step active" id="signup-step-1">
+            <h2>Personal Information</h2>
+            <div class="input-field">
+                <input type="text" class="signupFirstName" placeholder="First Name">
+            </div>
+            <div class="input-field">
+                <input type="text" class="signupLastName" placeholder="Last Name">
+            </div>
+            <div class="input-field icon-field" style="position: relative;">
+            <select class="signupGender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <i class='bx bx-chevron-down select-icon'></i>
+            </div>
+
+            <div class="input-field">
+                <input type="date" class="signupBirthday" placeholder="Birthday">
+            </div>
+            <div class="btn-group">
+                <button type="button" class="signupNextBtn" data-next="2">Next</button>
+            </div>
+        </section>
+
+        <!-- STEP 2: Account Info -->
+        <section class="signup-step" id="signup-step-2">
+            <h2>Account Details</h2>
+            <div class="input-field icon-field">
+                <input type="text" class="signupUser" placeholder="Username">
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-field icon-field">
+                <input type="email" class="signupEmailInput" placeholder="Email">
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="input-field password-wrapper">
+                <input type="password" class="signupPass" placeholder="Password">
+                <i class='bx bx-lock' id="signupPasswordIcon"></i>
+            </div>
+            <p id="strengthMsg"></p>
+            <div class="input-field password-wrapper">
+                <input type="password" class="signupConfirmPass" placeholder="Confirm Password">
+                <i class='bx bx-lock' id="signupConfirmIcon"></i>
+            </div>
+            <p id="matchMsg"></p>
+            <div class="btn-group">
+                <button type="button" class="signupBackBtn" data-back="1">Back</button>
+                <button type="button" class="signupNextBtn" data-next="3">Next</button>
+            </div>
+        </section>
+
+        <!-- STEP 3: Contact Info -->
+        <section class="signup-step" id="signup-step-3">
+            <h2>Contact Information</h2>
+            <div class="input-field">
+                <input type="text" class="signupPhone" placeholder="Phone Number">
+            </div>
+            <div class="input-field">
+                <input type="text" class="signupAddress" placeholder="Address">
+            </div>
+            <div class="btn-group">
+                <button type="button" class="signupBackBtn" data-back="2">Back</button>
+                <button type="button" class="signupNextBtn" data-next="4">Next</button>
+            </div>
+        </section>
+
+        <!-- STEP 4: Profile Picture -->
+        <section class="signup-step" id="signup-step-4">
+            <h2>Profile Picture</h2>
+            <div class="profileContainer">
+                <label class="profile-pic-box" for="signupProfilePic">
+                    <img id="signupPreview" src="Pictures/Profile/Default_pfp.jpg" alt="Profile Preview">
+                    <span class="profile-text">Click to upload</span>
+                </label>
+                <input type="file" id="signupProfilePic" class="signupProfilePic" accept="image/*" style="display:none;">
+            </div>
+            <div class="btn-group">
+                <button type="button" class="signupBackBtn" data-back="3">Back</button>
+                <button type="submit" class="signupSubmitBtn">Sign Up</button>
+            </div>
+            <p id="signupMsg"></p>
+        </section>
+
+    </div>
+    <p class="loginLink">Already have an account? <a href="login.html">Login</a></p>
+</section>
+</main>
+<script src="signup.js"></script>
+</body>
+</html>
