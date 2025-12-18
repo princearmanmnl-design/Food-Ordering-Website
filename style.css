@@ -1493,10 +1493,7 @@ body {
     .boxCart {position: relative;transform: none;}
     .drawer-overlay { display: none !important; }
     .cart { position: relative; transform: none; }
-    .mainContent{
-    width: 100%;
-    
-}
+    .mainContent{width: 100%;}
     .menuContainer{justify-items: center;}
 
     
@@ -1509,10 +1506,15 @@ body {
    Tablet landscape / small desktop (769px - 1024px)
    ============================ */
 @media (max-width: 1024px) {
-    .sidebar { display: none; }
+    .sidebar {
+        position: fixed;
+        transform: translateX(-100%);
+    }
+    .sidebar.active { transform: translateX(0); }
+
     .topBar { display: flex; }
     .boxCart { display: flex; }  
-    .rightSideBtn { display: none; }
+    .rightSideBtn { display: flex; }
     .sidebarBtn { display: flex; }
     .searchbar { margin: 5px 20px; }
     .menuContainer{height: calc(93vh - 170px);}
