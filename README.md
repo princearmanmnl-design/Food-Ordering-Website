@@ -16,7 +16,7 @@ A responsive Food Ordering Web Application inspired by kiosk-style ordering syst
 ## Live Demo
 https://princearmanmnl-design.github.io/Food-Ordering-Website/
 
-##Disclaimer
+## Disclaimer
 This website is created for educational and personal learning purposes only.
 All brand names, logos, and trademarks such as “McDonald’s,” are the property of their respective owners.
 This project is not affiliated with, sponsored by, or endorsed by any existing company.
